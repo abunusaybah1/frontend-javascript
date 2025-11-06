@@ -6,3 +6,9 @@ interface Teacher {
 	location: string;
 	[key: string]: string | number | undefined | boolean;
 }
+
+interface Directors extends Teacher {
+	numberOfReports: number;
+}
+
+// export {};
