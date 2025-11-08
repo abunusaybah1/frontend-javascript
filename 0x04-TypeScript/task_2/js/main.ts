@@ -58,7 +58,8 @@ export function isDirector(employee: Director | Teacher): employee is Director {
 }
 
 function executeWork(employee: Director | Teacher) {
-	if (employee instanceof Director) {
+	// if (employee instanceof Director) {
+	if (isDirector(employee)) {
 		return employee.workDirectorTasks();
 	} else {
 		return employee.workTeacherTasks();
