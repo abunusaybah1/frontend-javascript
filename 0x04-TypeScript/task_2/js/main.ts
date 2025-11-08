@@ -52,15 +52,15 @@ function createEmployee(salary: string | number) {
 
 console.log(createEmployee(1000));
 
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
 	return (employee as Director).workDirectorTasks !== undefined;
 	// the above line checks if the method workDirectorTasks exists on the employee object and narrows the type accordingly
 }
 
 function executeWork(employee: Director | Teacher) {
 	if (employee instanceof Director) {
-		employee.workDirectorTasks();
+		return employee.workDirectorTasks();
 	} else {
-		employee.workTeacherTasks();
+		return employee.workTeacherTasks();
 	}
 }
