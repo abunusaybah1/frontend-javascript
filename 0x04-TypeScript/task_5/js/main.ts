@@ -1,17 +1,17 @@
 interface MajorCredits {
-	credit: number;
+	credits: number;
 	brand: "Major";
 }
 
 interface MinorCredits {
-	credit: number;
+	credits: number;
 	brand: "Minor";
 }
 
-function sumMajorCredits(subject1: MajorCredits, Subject2: MajorCredits) {
-	return subject1.credit + Subject2.credit;
+function sumMajorCreditss(subject1: MajorCredits, subject2: MajorCredits) {
+	return subject1.credits + subject2.credits;
 }
 
-function sumMinorCredits(subject1: MinorCredits, Subject2: MinorCredits) {
-	return subject1.credit + Subject2.credit;
+function sumMinorCreditss(subject1: MinorCredits, subject2: MinorCredits) {
+	return subject1.credits + subject2.credits;
 }
