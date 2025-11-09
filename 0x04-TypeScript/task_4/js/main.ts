@@ -13,7 +13,7 @@ const java = new Java();
 // export const react = new Subjects.React();
 // export const java = new Subjects.Java();
 
-export const cTeacher: Subjects.Teacher = {
+export const cTeacher:Teacher = {
 	firstName: "John",
 	lastName: "Doe",
 	experienceTeachingC: 10,
